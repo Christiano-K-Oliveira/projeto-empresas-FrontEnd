@@ -6,12 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A Kenzie empresas vem de uma forma inovadora de você poder se candidatar e conhecer diversas empresas.">
     <link rel="icon" href="../../imgs/Ellipse 1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../style/globalStyle.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="index.css">
     <title>Kenzie Empresas | Home</title>
 </head>
 <body>
+    <header>
+        <div class="container" id="box_menu">
+            <figure>
+                <img src="../../imgs/Ellipse 1.png" alt="icon-logo">
+                <h1>Kenzie Empresas</h1>
+            </figure>
     
+            <img src="../../imgs/Vector (1).png" alt="icon-menu" id="img_menu">
+
+            <ul id="list_menu_max">
+                <a href="../login/index.html" id="btn_login">Login</a>
+                <a href="../register/index.html">Cadastro</a>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <figure id="img_home">
+            <img src="../../imgs/Rectangle 6.png" alt="work-img">
+        </figure>
+
+        <section class="setores_empresas">
+            <div>
+                <select name="setor_empresa" id="seletor_empresa">
+                    <option value="selecionar_setor">Selecionar Setor</option>
+                    <!-- <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option> -->
+                </select>
+                <img src="../../imgs/Arrow 2.png" alt="icon-seta">
+            </div>
+
+            <ul id="lista_empresas">
+                <!-- <li>
+                    <h3>Empresa Name</h3>
+                    <span class="horas_empresa">10 horas</span>
+                    <span class="setor_empresa">Setor</span>
+                </li>
+                <li>
+                    <h3>Empresa Name</h3>
+                    <span class="horas_empresa">10 horas</span>
+                    <span class="setor_empresa">Setor</span>
+                </li> -->
+            </ul>
+        </section>
+    </main>
+    
+    <script src="index.js" type="module"></script>
 </body>
 </html>

@@ -54,7 +54,7 @@ header .container > img{
     align-items: center;
     justify-content: center;
 }
-#list_menu #btn_login{
+#list_menu #btn_home{
     color: var(--brand-1);
     border: 1px solid var(--brand-1);
     background-color: var(--white-fixed);
@@ -93,7 +93,7 @@ header .container > img{
     align-items: center;
     justify-content: center;
 }
-#list_menu_max #btn_login{
+#list_menu_max #btn_home{
     color: var(--brand-1);
     border: 1px solid var(--brand-1);
     background-color: var(--white-fixed);

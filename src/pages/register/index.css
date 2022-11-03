@@ -1,0 +1,155 @@
+main > figure{
+    position: absolute;
+    width: 100%;
+    opacity: 80%;
+    z-index: -1;
+    left: 0;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 6%;
+}
+main{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+main form h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--black-100);
+    margin-bottom: 5%;
+}
+main form input{
+    border: none;
+    margin-bottom: 4%;
+    outline: 2px solid rgba(0, 0, 0, 0.25);
+    padding: 8px 12px;
+    transition: 0.2s ease;
+    height: 20px;
+    display: flex;
+
+}
+main form input:focus{
+    outline: 2px solid var(--brand-1);
+    transition: 0.2s ease;
+}
+main form input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+main form button{
+    background-color: var(--brand-1);
+    border: none;
+    color: var(--white-fixed);
+    padding: 8px 0;
+    font-weight: 700;
+    font-size: var(--size-3);
+    cursor: pointer;
+}
+main form button:hover{
+    background-color: var(--brand-1-hover);
+    transition: 0.2s ease;
+}
+main form span{
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+}
+main form a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--brand-1);
+    border: 2px solid var(--brand-1);
+    padding: 8px 0;
+    font-weight: 700;
+    transition: 0.2s ease;
+    margin-top: 2%;
+}
+main form a:hover{
+    background-color: var(--brand-1);
+    color: var(--white-fixed);
+    transition: 0.2s ease;
+}
+main form #select_nivel_profissional{
+    border: none;
+    margin-bottom: 4%;
+    outline: 2px solid rgba(0, 0, 0, 0.25);
+    padding: 8px 12px;
+    transition: 0.2s ease;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    font-size: 14px;
+}
+main form button img{
+    transform: rotate(90deg);
+    width: 20px;
+    height: 20px;
+    margin-top: 1%;
+    animation: spinnerAnimation 1.5s ease;
+    animation-iteration-count: infinite;
+}
+
+
+
+@media (max-width: 800px){
+    #list_menu_max{
+        display: none;
+    }
+    #img_home{
+        display: none;
+    }
+    main > figure img{
+        height: 100vh;
+    }
+    main form{
+        margin-top: 10%;
+        background: rgba(255, 255, 255, 0.92);
+        width: 100%;
+    }
+    main{
+        margin: 0;
+        max-width: 100%;
+    }
+
+}
+
+@media (min-width: 800px){
+    #box_menu{
+        max-width: 80%;
+    }
+    #box_menu > img{
+        display: none;
+    }
+    header figure img{
+        margin-right: 1%;
+    }
+    header figure h1{
+        font-size: var(--size-1);
+    }
+    main{
+        max-width: 80%;
+        display: flex;
+    }
+    main > figure img{
+        height: 740px;
+        width: 100%;
+    }
+    main form input{
+        width: 422px;
+    }
+}
+
+@keyframes spinnerAnimation {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }}
