@@ -64,6 +64,7 @@ main{
     background-color: rgb(197, 197, 197);
     border-radius: 8px;
     transition: 0.2s ease;
+    height: 40px;
 }
 .setores_empresas > ul::-webkit-scrollbar-thumb:active{
     background-color: var(--brand-1);

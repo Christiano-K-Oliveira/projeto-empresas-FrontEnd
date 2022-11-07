@@ -45,12 +45,13 @@ import { logarUsuario } from "../../script/api.js";
 
 btnLogin.addEventListener('click', (event) => {
     event.preventDefault()
+    let button = event.target
 
     if(inputs[0].value !== '' && inputs[1].value !== ''){
         let user = {
             "email": `${inputs[0].value}`,
             "password": `${inputs[1].value}`
         }
-        logarUsuario(user)
+        logarUsuario(user, button)
     }
 })

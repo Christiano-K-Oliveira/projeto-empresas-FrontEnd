@@ -63,10 +63,10 @@ btnCadastrar.addEventListener('click', (event) => {
         let img = document.createElement('img')
         img.src = '../../imgs/spinner.png'
         button.appendChild(img)
-
-        setTimeout(() => {
-            window.location.href = window.location.href.replace('register', 'login')
-        }, 3000)   
+        
+        // setTimeout(() => {
+        //     window.location.href = window.location.href.replace('register', 'login')
+        // }, 3000)   
     }
     
 })

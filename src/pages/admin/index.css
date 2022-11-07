@@ -1,0 +1,248 @@
+header{
+    background-color: var(--white-fixed);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+header .container{
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container figure{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+header .container figure img{
+    width: 16px;
+    height: 16px;
+}
+header .container figure h1{
+    color: var(--black-100);
+    font-size: var(--size-1);
+}
+header .container a{
+    text-decoration: none;
+    color: var(--brand-1);
+    border: 1px solid var(--brand-1);
+    padding: 8px 20px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+header .container a:hover{
+    background-color: var(--brand-1);
+    color: var(--white-fixed);
+    transition: 0.2s ease;
+}
+
+
+
+.secao_departamentos{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.secao_departamentos > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.secao_departamentos > div h2{
+    font-weight: 700;
+    color: var(--black-100);
+    font-size: var(--size-title-2);
+}
+.secao_departamentos > div select{
+    width: 282px;
+    height: 26px;
+    border-radius: 15px;
+    border: 1px solid var(--black-100);
+    cursor: pointer;
+    background-color: var(--white-fixed);
+    text-align: center;
+    font-size: var(--size-3);
+    color: var(--black-100);
+}
+.secao_departamentos > div button{
+    border: none;
+    background-color: var(--brand-1);
+    color: var(--white-fixed);
+    font-weight: 700;
+    font-size: var(--size-2);
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 32px;
+    cursor: pointer;
+    padding-left: 30px;
+    transition: 0.2s ease;
+}
+.secao_departamentos > div button img{
+    margin-right: 10px;
+    width: 18.67px;
+    height: 18.67px;
+}
+.secao_departamentos > div button:hover{
+    background-color: rgb(0, 0, 221);
+    transition: 0.2s ease;
+}
+.secao_departamentos ul{
+    list-style: none;
+    background-color: var(--color-grey-1);
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 60px;
+    height: 385px;
+    overflow-y: auto;
+}
+.secao_departamentos ul li{
+    background-color: var(--white-fixed);
+    border-bottom: 1px solid var(--brand-1);
+    padding: 10px 20px;
+    height: fit-content;
+    width: 450px;
+    margin-bottom: 3%;
+}
+.secao_departamentos ul li h3{
+    font-weight: 700;
+    font-size: var(--size-2);
+    color: var(--black-100);
+    margin-bottom: 4%;
+}
+.secao_departamentos ul li span{
+    color: var(--black-100);
+    font-size: var(--size-3);
+    margin-top: 2%;
+    display: flex;
+}
+.secao_departamentos ul li div{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 20px;
+    padding-bottom: 3%;
+}
+.secao_departamentos ul li div button{
+    border: none;
+    background: none;
+    width: 25px;
+    height: 20px;
+}
+.secao_departamentos ul li div button img{
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.secao_departamentos ul::-webkit-scrollbar{
+    width: 4px;
+}
+.secao_departamentos ul::-webkit-scrollbar-thumb{
+    background-color: var(--brand-1);
+    border-radius: 8px;
+    transition: 0.2s ease;
+    height: 40px;
+}
+
+
+
+.secao_usuarios{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+.secao_usuarios h2{
+    color: var(--black-100);
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--size-title-2);
+}
+.secao_usuarios ul{
+    list-style: none;
+    list-style: none;
+    background-color: var(--color-grey-1);
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 60px;
+    height: 385px;
+    overflow-y: auto;
+}
+.secao_usuarios ul::-webkit-scrollbar{
+    width: 4px;
+}
+.secao_usuarios ul::-webkit-scrollbar-thumb{
+    background-color: var(--brand-1);
+    border-radius: 8px;
+    transition: 0.2s ease;
+    height: 40px;
+}
+.secao_usuarios ul li{
+    background-color: var(--white-fixed);
+    border-bottom: 1px solid var(--brand-1);
+    padding: 10px 20px;
+    height: fit-content;
+    width: 450px;
+    margin-bottom: 3%;
+}
+.secao_usuarios ul li h3{
+    font-weight: 700;
+    font-size: var(--size-2);
+    color: var(--black-100);
+    margin-bottom: 4%;
+}
+.secao_usuarios ul li span{
+    color: var(--black-100);
+    font-size: var(--size-3);
+    margin-top: 2%;
+    display: flex;
+}
+.secao_usuarios ul li button{
+    border: none;
+    background: none;
+    width: 25px;
+    height: 20px;
+}
+.secao_usuarios ul li button img{
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+.secao_usuarios ul li > div{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 20px;
+    padding-bottom: 3%;
+}
+
+
+
+
+
+main{
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

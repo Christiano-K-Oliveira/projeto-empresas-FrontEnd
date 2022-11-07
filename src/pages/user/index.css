@@ -1,0 +1,110 @@
+header{
+    background-color: var(--white-fixed);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 80%;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container figure{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+header .container figure img{
+    width: 16px;
+    height: 16px;
+}
+header .container figure h1{
+    color: var(--black-100);
+    font-size: var(--size-1);
+}
+header .container a{
+    text-decoration: none;
+    color: var(--brand-1);
+    border: 1px solid var(--brand-1);
+    padding: 8px 20px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+header .container a:hover{
+    background-color: var(--brand-1);
+    color: var(--white-fixed);
+    transition: 0.2s ease;
+}
+
+
+.secao_dados_usuario{
+    background-color: white;
+}
+.secao_dados_usuario .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin-top: 2%;
+    padding: 10px 25px;
+}
+.secao_dados_usuario .container > div h2{
+    font-weight: 700;
+    font-size: var(--size-title-2);
+    color: var(--black-100);
+}
+.secao_dados_usuario .container > div div{
+    display: flex;
+    width: 550px;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+.secao_dados_usuario .container > div div span{
+    color: var(--black-100);
+    font-size: var(--size-2);
+}
+.secao_dados_usuario .container button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    width: 35px;
+    height: 35px;
+}
+.secao_dados_usuario .container button img{
+    width: 26.72px;
+    height: 26.72px;
+}
+.secao_dados_usuario .container button:hover{
+    border: 2px solid var(--brand-1);
+}
+
+
+
+.departamento_vazio{
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px solid var(--color-grey-2);
+    margin-top: 3%;
+    background-color: var(--color-grey-1);
+    height: 350px;
+}
+.departamento_vazio h2{
+    margin-top: 12.5%;
+    color: var(--black-100);
+    font-weight: 700;
+    font-size: var(--size-title-1);
+}
+
+
+
+
+
+
+
+

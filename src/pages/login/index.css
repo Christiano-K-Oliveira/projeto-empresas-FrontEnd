@@ -78,7 +78,10 @@ main form a:hover{
     color: var(--white-fixed);
     transition: 0.2s ease;
 }
-
+main form button img{
+    animation: spinnerAnimation 1.5s ease;
+    animation-iteration-count: infinite;
+}
 
 
 @media (max-width: 800px){
@@ -123,5 +126,15 @@ main form a:hover{
     }
     main form input{
         width: 422px;
+    }
+}
+
+
+@keyframes spinnerAnimation {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
