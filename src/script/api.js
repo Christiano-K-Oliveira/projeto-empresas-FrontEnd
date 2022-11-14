@@ -177,15 +177,15 @@ async function dadosDoUsuario(acesso, name, email, setor, work = '', secao){
         },
     }).then(response => response.json())
     .then(responseJson => {
-        console.log(responseJson.department_uuid === null)
+        // console.log(responseJson)
         let sector = responseJson.professional_level[0].toUpperCase() + responseJson.professional_level.slice(1)
 
         name.innerText = responseJson.username
         email.innerText = responseJson.email
         setor.innerText = sector
 
-        if(responseJson.department_uuid !== null){
-            work.innerText = responseJson.department_uuid
+        if(responseJson.kind_of_work !== null && responseJson.kind_of_work !== ''){
+            work.innerText = responseJson.kind_of_work
         }
         else{
             work.innerText = ''

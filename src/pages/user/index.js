@@ -28,6 +28,62 @@ function renderUsuario(){
 renderUsuario()
 
 
+async function renderDepartamento(){
+    let tokenUsuariosDepartamento = ''
+
+    await fetch('http://localhost:6278/users/departments', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+        }
+    })
+    .then(reponse => reponse.json())
+    .then(reponseJson => {
+        secaoDepartamento.children[0].remove()
+        let divBoxDepartamento = document.createElement('div')
+        let tituloBoxDepartamento = document.createElement('h2')
+
+        divBoxDepartamento.className = 'box_departamento'
+        tituloBoxDepartamento.innerText = reponseJson.name
+
+        divBoxDepartamento.appendChild(tituloBoxDepartamento)
+        secaoDepartamento.appendChild(divBoxDepartamento)
+
+        tokenUsuariosDepartamento = reponseJson.uuid
+    })
+    .catch(erro => console.log(erro))
+
+    await fetch('http://localhost:6278/users/departments/coworkers', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+        }
+    })
+    .then(response => response.json())
+    .then(reponseJson => {
+        let lista = document.createElement('ul')
+
+        reponseJson[0].users.forEach((user) => {
+            console.log(user)
+            let item = document.createElement('li')
+            let itemName = document.createElement('h3')
+            let itemWork = document.createElement('p')
+
+            itemName.innerText = user.username
+            itemWork.innerText = user.professional_level
+
+            item.append(itemName, itemWork)
+            lista.appendChild(item)
+        })
+
+        secaoDepartamento.appendChild(lista)
+    })
+    .catch(erro => console.log(erro))
+}
+renderDepartamento()
+
 //Eventos do modal de edição e sua criação
 const btnEdit = document.querySelector('button')
 import { editarUsuario } from "../../script/api.js";

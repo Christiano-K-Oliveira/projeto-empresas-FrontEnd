@@ -102,9 +102,36 @@ header .container a:hover{
 }
 
 
-
-
-
-
-
-
+.secao_departamento .box_departamento{
+    background-color: var(--brand-1);
+    padding: 10px 0;
+}
+.secao_departamento .box_departamento h2{
+    margin: 0;
+    color: var(--white-fixed);
+}
+.secao_departamento ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px 50px;
+}
+.secao_departamento ul li{
+    border: 2px solid var(--brand-1);
+    width: 31.3%;
+    padding: 10px 20px;
+    background-color: var(--white-fixed);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.secao_departamento ul li h3{
+    color: var(--black-100);
+    font-weight: 700;
+    font-size: var(--size-3);
+}
+.secao_departamento ul li p{
+    font-size: 15px;
+    color: var(--black-100);
+}
