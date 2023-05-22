@@ -1,0 +1,30 @@
+:root{
+    --black-100: #000000;
+    --color-grey-1: #F8F8F8;
+    --color-grey-2: #A8A8A8;
+    --white-fixed: #FFFFFF;
+    --green-100: #4BA036;
+    --red-100: #CE4646;
+    --brand-1: #4200FF;
+    --brand-1-hover: rgb(0, 0, 201);
+
+    --size-1: 1.25rem;
+    --size-2: 1.125rem;
+    --size-3: 1rem;
+
+    --size-title-1: 2.5rem;
+    --size-title-2: 1.875rem;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+body, header, figure, img, h1, main, section, div, h2, ul, li, h3, span, button, h4{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
